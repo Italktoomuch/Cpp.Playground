@@ -6,7 +6,13 @@ using namespace std;
 	Write a function SwapVectorEnds() that swaps the first and last elements of its vector parameter. Ex: sortVector = {10, 20, 30, 40} becomes {40, 20, 30, 10}. The vector's size may differ from 4. 
 */
 
-/* Your solution goes here  */
+void SwapVectorEnds(vector<int>& sortVector){
+   int TempVal;
+   
+   TempVal = sortVector[0];
+   sortVector[0] = sortVector[(sortVector.size() - 1)];
+   sortVector[(sortVector.size() - 1)] = TempVal ;
+   }
 
 int main() {
    vector<int> sortVector(4);
